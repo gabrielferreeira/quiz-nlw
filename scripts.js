@@ -114,9 +114,10 @@ const perguntas = [
   const corretas = new Set();
   const totalDePerguntas = perguntas.length;
   const mostrarTotal = document.querySelector("#acertos span");
-  mostrarTotal.textContent = corretas.size + "de" + totalDePerguntas;
+  mostrarTotal.textContent = corretas.size + " de " + totalDePerguntas;
   
-  for (const item of perguntas) {
+  for (let i = 0; i < 5; i++) {
+    const item = perguntas[i];
     const quizItem = template.content.cloneNode(true);
     quizItem.querySelector("h2").textContent = item.pergunta;
   
@@ -135,7 +136,7 @@ const perguntas = [
         if (estaCorreta) {
           corretas.add(item);
         }
-        mostrarTotal.textContent = corretas.size + "de" + totalDePerguntas;
+        mostrarTotal.textContent = corretas.size + " de " + totalDePerguntas;
       };
   
       quizItem.querySelector("dl").appendChild(dt);
