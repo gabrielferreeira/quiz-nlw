@@ -1,74 +1,88 @@
 const perguntas = [
-    {
-      pergunta: "O que significa 'DOM' em JavaScript?",
-      respostas: [
-        "Documento de Objeto Mínimo",
-        "Modelo de Objeto do Documento",
-        "Dicionário de Objetos Múltiplos",
-      ],
-      correta: 1, // Modelo de Objeto do Documento
-    },
-    {
-      pergunta: "Qual destes é um tipo de dados válido em JavaScript?",
-      respostas: ["Undefined", "NaN", "Infinity"],
-      correta: 0, // Undefined
-    },
-    {
-      pergunta: "Qual é a função do método 'addEventListener()' em JavaScript?",
-      respostas: [
-        "Remover um ouvinte de evento",
-        "Adicionar um ouvinte de evento",
-        "Criar um novo evento",
-      ],
-      correta: 1, // Adicionar um ouvinte de evento
-    },
-    {
-      pergunta: "O que é um operador ternário em JavaScript?",
-      respostas: [
-        "Um operador que trabalha com três valores",
-        "Um operador que realiza três operações",
-        "Um operador que compara três variáveis",
-      ],
-      correta: 0, // Um operador que trabalha com três valores
-    },
-    {
-      pergunta:
-        "Qual função é usada para converter uma string em um número em JavaScript?",
-      respostas: ["parseInt()", "convertToNumber()", "stringToNumber()"],
-      correta: 0, // parseInt()
-    },
-    {
-      pergunta: "Qual é a saída do código: console.log(typeof []) em JavaScript?",
-      respostas: ["Array", "Object", "Undefined"],
-      correta: 1, // Object
-    },
-    {
-      pergunta: "O que o operador '===' faz em JavaScript?",
-      respostas: [
-        "Compara os valores e tipos sem coerção de tipo",
-        "Compara os valores com coerção de tipo",
-        "Compara apenas os tipos de dados",
-      ],
-      correta: 0, // Compara os valores e tipos sem coerção de tipo
-    },
-    {
-      pergunta: "Qual é o operador de negação em JavaScript?",
-      respostas: ["!", "-", "~"],
-      correta: 0, // !
-    },
-    {
-      pergunta:
-        "Qual função é usada para imprimir algo no console em JavaScript?",
-      respostas: ["console.log()", "print()", "display()"],
-      correta: 0, // console.log()
-    },
-    {
-      pergunta:
-        "Qual método é usado para remover o último elemento de um array em JavaScript?",
-      respostas: ["pop()", "removeLast()", "splice()"],
-      correta: 0, // pop()
-    },
-  ];
+  {
+    pergunta: "Qual é o principal objetivo da musculação?",
+    respostas: [
+      "Perder peso",
+      "Aumentar a flexibilidade",
+      "Desenvolver massa muscular",
+    ],
+    correta: 2, // Desenvolver massa muscular
+  },
+  {
+    pergunta:
+      "Qual é o nome do tipo de exercício que trabalha um único grupo muscular?",
+    respostas: [
+      "Exercício composto",
+      "Exercício isométrico",
+      "Exercício isolador",
+    ],
+    correta: 2, // Exercício isolador
+  },
+  {
+    pergunta:
+      "Qual é a melhor abordagem para evitar lesões durante a musculação?",
+    respostas: [
+      "Levantar o máximo de peso possível",
+      "Manter uma boa forma e técnica",
+      "Treinar até a exaustão",
+    ],
+    correta: 1, // Manter uma boa forma e técnica
+  },
+  {
+    pergunta:
+      "Qual é a função principal da creatina na suplementação esportiva?",
+    respostas: [
+      "Aumentar a resistência aeróbica",
+      "Aumentar a velocidade de recuperação muscular",
+      "Aumentar a disponibilidade de energia para contrações musculares",
+    ],
+    correta: 2, // Aumentar a disponibilidade de energia para contrações musculares
+  },
+  {
+    pergunta:
+      "Quanto tempo, em média, deve durar um treino de musculação para obter resultados eficazes?",
+    respostas: ["30 minutos", "1 hora", "90 minutos"],
+    correta: 1, // 1 hora
+  },
+  {
+    pergunta:
+      "Qual é o principal benefício da realização de exercícios de resistência?",
+    respostas: [
+      "Aumento da massa muscular",
+      "Melhora da saúde cardiovascular",
+      "Aumento da flexibilidade",
+    ],
+    correta: 0, // Aumento da massa muscular
+  },
+  {
+    pergunta:
+      "Qual é o nome do processo pelo qual os músculos crescem após o treinamento de musculação?",
+    respostas: ["Hipertrofia", "Atrofia", "Regeneração"],
+    correta: 0, // Hipertrofia
+  },
+  {
+    pergunta:
+      "Qual é o músculo do peito frequentemente trabalhado através de exercícios como supino?",
+    respostas: ["Bíceps", "Quadríceps", "Peitoral"],
+    correta: 2, // Peitoral
+  },
+  {
+    pergunta:
+      "Qual é a melhor maneira de aumentar a intensidade do treino de musculação?",
+    respostas: [
+      "Diminuir o número de repetições",
+      "Aumentar o peso levantado",
+      "Diminuir o descanso entre as séries",
+    ],
+    correta: 1, // Aumentar o peso levantado
+  },
+  {
+    pergunta:
+      "Qual é o nome do processo pelo qual o corpo queima calorias para produzir energia durante o exercício?",
+    respostas: ["Catabolismo", "Metabolismo", "Termogênese"],
+    correta: 2, // Termogênese
+  },
+];
   
   const quiz = document.querySelector("#quiz");
   const template = document.querySelector("template");
